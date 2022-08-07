@@ -10,7 +10,8 @@ def home():
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html")    
+    projects = list(Project.query.order_by(Project.project_name).all())
+    return render_template("projects.html", projects=projects)   
 
 
 @app.route("/add_project", methods=["GET", "POST"])
