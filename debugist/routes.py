@@ -31,4 +31,12 @@ def edit_project(project_id):
         project.project_name = request.form.get("project_name")
         db.session.commit()
         return redirect(url_for("projects"))
-    return render_template("edit_project.html", project=project)    
+    return render_template("edit_project.html", project=project)
+
+
+@app.route("/delete_project/<int:project_id>")
+def delete_project(project_id):
+    project = Project.query.get_or_404(project_id)
+    db.session.delete(project)
+    db.session.commit()
+    return redirect(url_for("projects"))        
