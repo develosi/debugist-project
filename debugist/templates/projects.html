@@ -19,7 +19,7 @@
                 <span class="card-title">{{ project.project_name }}</span>
             </div>
             <div class="card-action">
-                <a href="#" class="btn green darken-1">Edit</a>
+                <a href="{{ url_for('edit_project', project_id=project.id) }}" class="btn green accent-4">Edit</a>
                 <a href="#" class="btn red darken-2">Delete</a>
             </div>
         </div>
