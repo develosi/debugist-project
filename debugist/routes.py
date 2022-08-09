@@ -22,3 +22,13 @@ def add_project():
         db.session.commit()
         return redirect(url_for("projects"))
     return render_template("add_project.html")    
+
+
+@app.route("/edit_project/<int:project_id>", methods=["GET", "POST"])
+def edit_project(project_id):
+    project = Project.query.get_or_404(project_id)
+    if request.method == "POST":
+        project.project_name = request.form.get("project_name")
+        db.session.commit()
+        return redirect(url_for("projects"))
+    return render_template("edit_project.html", project=project)    
