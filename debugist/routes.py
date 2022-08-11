@@ -40,3 +40,20 @@ def delete_project(project_id):
     db.session.delete(project)
     db.session.commit()
     return redirect(url_for("projects"))        
+
+
+@app.route("/add_task", methods=["GET", "POST"])
+def add_task():
+    projects = list(Project.query.order_by(Project.project_name).all())
+    if request.method == "POST":
+        task = Task(
+            task_name=request.form.get("task_name"),
+            task_description=request.form.get("task_description"),
+            is_urgent=bool(True if request.form.get("is_urgent") else False),
+            due_date=request.form.get("due_date"),
+            project_id=request.form.get("project_id")
+        )
+        db.session.add(task)
+        db.session.commit()
+        return redirect(url_for("home"))
+    return render_template("add_task.html", projects=projects)    
