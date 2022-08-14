@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="pink-text text-darken-1 center-align">Edit Task</h3>
+
+<div class="row card-panel grey lighten-5">
+    <form class="col s12" method="POST" action="{{ url_for('edit_task', task_id=task.id) }}">
+        <!-- edit task name section -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix pink-text text-darken-1"></i>
+                <input id="task_name" name="task_name" value="{{ task.task_name }}" minlength="3" maxlength="60"
+                    type="text" class="validate" required>
+                <label for="task_name">Task Name</label>
+            </div>
+        </div>
+        <!-- edit task description section -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix pink-text text-darken-1"></i>
+                <textarea id="task_description" name="task_description" minlength="3" maxlength="250" type="text"
+                    class="materialize-textarea validate" required>
+                    {{- task.task_description -}}
+                </textarea>
+                <label for="task_description">Task Description</label>
+            </div>
+        </div>
+        <!-- edit due date section -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                <input id="due_date" name="due_date" type="text" value="{{ task.due_date.strftime('%d %B, %Y') }}"
+                    class="datepicker validate" required>
+                <label for="due_date">Due Date</label>
+            </div>
+        </div>
+        <!-- edit is urgent section -->
+        <div class="row">
+            <div class="input-field col s12">
+                <div class="switch">
+                    <i class="fas fa-exclamation-circle prefix pink-text text-darken-1"></i>
+                    <label for="is_urgent">
+                        {% if task.is_urgent == True %}
+                            <input id="is_urgent" name="is_urgent" type="checkbox" checked>
+                        {% else %}
+                            <input id="is_urgent" name="is_urgent" type="checkbox">
+                        {% endif %}
+                        <span class="lever"></span>
+                        Is Urgent
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- edit project id section -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-folder-open prefix pink-text text-darken-1"></i>
+                <select id="project_id" name="project_id" class="validate" required>
+                    <option value="" disabled>Choose Project</option>
+                    {% for project in projects %}
+                        {% if project == task.project %}
+                            <option value="{{ project.id }}" selected>{{ project.project_name }}</option>
+                        {% else %}
+                            <option value="{{ project.id }}">{{ project.project_name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <label for="project_id">Project</label>
+            </div>
+        </div>
+        <!-- submit button section -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large pink darken-1">
+                    Edit Task <i class="fas fa-edit right"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
