@@ -3,6 +3,7 @@
 
 <h3 class="black-text center-align header-text">Edit Task</h3>
 
+<!-- edit task card -->
 <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="{{ url_for('edit_task', task_id=task.id) }}">
         <!-- edit task name section -->
@@ -25,7 +26,7 @@
                 <label for="task_description">Task Description</label>
             </div>
         </div>
-        <!-- edit due date section -->
+        <!-- edit due date section with datepicker -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-solid fa-calendar-check prefix pink-text text-darken-1"></i>
@@ -34,7 +35,7 @@
                 <label for="due_date">Due Date</label>
             </div>
         </div>
-        <!-- edit is urgent section -->
+        <!-- edit is urgent section with switch -->
         <div class="row">
             <div class="input-field col s12">
                 <div class="switch">
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <!-- edit project id section -->
+        <!-- edit project id name section -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-solid fa-folder-closed prefix pink-text text-darken-1"></i>

@@ -18,7 +18,7 @@
 <body>
 
     <header>
-        <!-- top main nav bar section --> 
+        <!-- top main nav bar section with logo --> 
         <nav class="grey darken-3 z-depth-0">
             <div class="nav-wrapper valign-wrapper">
               <a href="{{ url_for('home') }}" class="brand-logo center debugist-nav"><img src="{{ url_for('static', filename='images/debugist_logo.svg') }}" alt="Debugist Application Logo" 
@@ -40,11 +40,13 @@
         </ul>
     </header>
 
+    <!-- main class block content section -->
     <main class="container">
         {% block content %}
         {% endblock %}
     </main>
 
+    <!-- footer section with logo and social media links -->
     <footer class="page-footer grey darken-3">
         <div class="container">
           <div class="row">
@@ -74,6 +76,7 @@
         </div>
     </footer>
 
+    <!-- javascript links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
