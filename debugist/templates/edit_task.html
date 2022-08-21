@@ -17,7 +17,7 @@
         <!-- edit task description section -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix pink-text text-darken-1"></i>
+                <i class="fas fa-solid fa-list prefix pink-text text-darken-1"></i>
                 <textarea id="task_description" name="task_description" minlength="3" maxlength="250" type="text"
                     class="materialize-textarea validate" required>
                     {{- task.task_description -}}
@@ -28,7 +28,7 @@
         <!-- edit due date section -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-calendar-alt prefix pink-text text-darken-1"></i>
+                <i class="fas fa-solid fa-calendar-check prefix pink-text text-darken-1"></i>
                 <input id="due_date" name="due_date" type="text" value="{{ task.due_date.strftime('%d %B, %Y') }}"
                     class="datepicker validate" required>
                 <label for="due_date">Due Date</label>
@@ -54,7 +54,7 @@
         <!-- edit project id section -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix pink-text text-darken-1"></i>
+                <i class="fas fa-solid fa-folder-closed prefix pink-text text-darken-1"></i>
                 <select id="project_id" name="project_id" class="validate" required>
                     <option value="" disabled>Choose Project</option>
                     {% for project in projects %}
