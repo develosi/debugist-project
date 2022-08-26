@@ -9,6 +9,7 @@ def home():
     return render_template("tasks.html", tasks=tasks)
 
 
+# Projects function. Displays all current projects in alphabetical order.
 @app.route("/projects")
 def projects():
     projects = list(Project.query.order_by(Project.project_name).all())
