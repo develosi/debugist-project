@@ -16,6 +16,7 @@ def projects():
     return render_template("projects.html", projects=projects)   
 
 
+# Add Project function. 
 @app.route("/add_project", methods=["GET", "POST"])
 def add_project():
     if request.method == "POST":
@@ -26,6 +27,7 @@ def add_project():
     return render_template("add_project.html")    
 
 
+# Edit Project function.
 @app.route("/edit_project/<int:project_id>", methods=["GET", "POST"])
 def edit_project(project_id):
     project = Project.query.get_or_404(project_id)
@@ -36,6 +38,7 @@ def edit_project(project_id):
     return render_template("edit_project.html", project=project)
 
 
+# Delete Project function.
 @app.route("/delete_project/<int:project_id>")
 def delete_project(project_id):
     project = Project.query.get_or_404(project_id)
@@ -44,6 +47,7 @@ def delete_project(project_id):
     return redirect(url_for("projects"))        
 
 
+# Add Task function.
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
     projects = list(Project.query.order_by(Project.project_name).all())
@@ -61,6 +65,7 @@ def add_task():
     return render_template("add_task.html", projects=projects)
 
 
+# Edit Task function.
 @app.route("/edit_task/<int:task_id>", methods=["GET", "POST"])
 def edit_task(task_id):
     task = Task.query.get_or_404(task_id)
@@ -75,6 +80,7 @@ def edit_task(task_id):
     return render_template("edit_task.html", task=task, projects=projects)
 
 
+# Delete Task function.
 @app.route("/delete_task/<int:task_id>")
 def delete_task(task_id):
     task = Task.query.get_or_404(task_id)
