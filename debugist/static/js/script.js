@@ -17,9 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // collapsible initializataion function
     let collapsibles = document.querySelectorAll(".collapsible");
     M.Collapsible.init(collapsibles);
+
+    let modal = document.querySelectorAll('.modal');
+    M.Modal.init(modal);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
+
+//document.addEventListener('DOMContentLoaded', function() {
+//    var elems = document.querySelectorAll('.modal');
+//    var instances = M.Modal.init(elems, options);
+//  });
