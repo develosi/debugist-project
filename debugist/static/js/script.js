@@ -18,3 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let collapsibles = document.querySelectorAll(".collapsible");
     M.Collapsible.init(collapsibles);
 });
+
+// modal trigger 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
