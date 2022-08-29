@@ -21,10 +21,13 @@
             </div>
             <div class="card-action">
                 <a href="{{ url_for('edit_project', project_id=project.id) }}" class="btn grey darken-1">Edit</a>
-                <a href="#modal-{{ project._id }}" class="btn red darken-1 modal-trigger">Delete</a>
+
+                <!-- 
+
+                <a href="#delete ProjectModal-{{ project.id }}" class="btn red darken-1 modal-trigger">Delete</a>
                 <!-- <a href="{{ url_for('delete_project', project_id=project.id) }}" class="btn red darken-1">Delete</a> -->
 
-                <!-- modal section -->
+                <!-- modal section 
                 <div id="modal-{{ project.id }}" class="modal">
                     <div class="modal-content">
                       <h4>Are you sure you want to delete this Project?</h4>
@@ -35,6 +38,26 @@
                       <a href="{{ url_for('delete_project', project_id=project.id) }}" class="btn red darken-1">Delete</a>
                     </div>
                   </div>
+                --> 
+
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+                
+
+                  
+                
+                  
             </div>
         </div>
     </div>
