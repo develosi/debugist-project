@@ -1,6 +1,7 @@
-from flask import render_template, request, redirect, url_for
+from flask import flash, render_template, request, redirect, session, url_for
+from werkzeug.security import generate_password_hash, check_password_hash
 from debugist import app, db
-from debugist.models import Project, Task
+from debugist.models import Project, Task, Users
 
 
 @app.route("/")
