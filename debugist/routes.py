@@ -51,7 +51,10 @@ def delete_project(project_id):
 # Add Task function.
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
-    projects = list(Project.query.order_by(Project.project_name).all())
+    if "user" not in session:
+        flash("You need to be logged in to add a task")
+        return redirect(url_for("home"))
+
     if request.method == "POST":
         task = Task(
             task_name=request.form.get("task_name"),
@@ -62,7 +65,10 @@ def add_task():
         )
         db.session.add(task)
         db.session.commit()
+        flash("Task Successfully Added")
         return redirect(url_for("home"))
+
+    projects = list(Project.query.order_by(Project.project_name).all())    
     return render_template("add_task.html", projects=projects)
 
 
