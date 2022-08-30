@@ -94,3 +94,78 @@ def delete_task(task_id):
     db.session.delete(task)
     db.session.commit()
     return redirect(url_for("home"))    
+
+
+# Adding a user and managing user
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if request.method == "POST":
+        # Check if username already exists in db
+        existing_user = Users.query.filter(Users.user_name == \
+                                           request.form.get("username").lower()).all()
+        
+        if existing_user:
+            flash("Username already exists")
+            return redirect(url_for("register"))
+        
+        user = Users(
+            user_name=request.form.get("username").lower(),
+            password=generate_password_hash(request.form.get("password"))
+        )
+        
+        db.session.add(user)
+        db.session.commit()
+
+        # Put the new user into 'session' cookie
+        session["user"] = request.form.get("username").lower()
+        flash("Registration Successful!")
+        return redirect(url_for("profile", username=session["user"]))
+
+    return render_template("register.html")
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        # Check if username exists in db
+        existing_user = Users.query.filter(Users.user_name == \
+                                           request.form.get("username").lower()).all()
+
+        if existing_user:
+            print(request.form.get("username"))
+            # Ensure hashed password matches user input
+            if check_password_hash(
+                    existing_user[0].password, request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        flash("Welcome, {}".format(
+                            request.form.get("username")))
+                        return redirect(url_for(
+                            "profile", username=session["user"]))
+            else:
+                # Invalid password match
+                flash("Incorrect Username and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            # Username doesn't exist
+            flash("Incorrect Username and/or Password")
+            return redirect(url_for("login"))
+
+    return render_template("login.html")
+
+
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+        
+    if "user" in session:
+        return render_template("profile.html", username=session["user"])
+
+    return redirect(url_for("login"))
+
+
+@app.route("/logout")
+def logout():
+    # Remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))    
