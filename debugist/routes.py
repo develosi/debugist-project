@@ -41,6 +41,11 @@ def add_project():
 # Edit Project function.
 @app.route("/edit_project/<int:project_id>", methods=["GET", "POST"])
 def edit_project(project_id):
+
+    if "user" not in session:
+        flash("You need to be logged in to edit projects")
+        return redirect(url_for("home"))
+
     project = Project.query.get_or_404(project_id)
     if request.method == "POST":
         project.project_name = request.form.get("project_name")
@@ -52,6 +57,11 @@ def edit_project(project_id):
 # Delete Project function.
 @app.route("/delete_project/<int:project_id>")
 def delete_project(project_id):
+
+    if "user" not in session:
+        flash("You need to be logged in to delete projects")
+        return redirect(url_for("home"))
+
     project = Project.query.get_or_404(project_id)
     db.session.delete(project)
     db.session.commit()
