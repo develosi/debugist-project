@@ -25,6 +25,11 @@ def projects():
 # Add Project function. 
 @app.route("/add_project", methods=["GET", "POST"])
 def add_project():
+
+    if "user" not in session:
+        flash("You need to be logged in to add projects")
+        return redirect(url_for("home"))
+
     if request.method == "POST":
         project = Project(project_name=request.form.get("project_name"))
         db.session.add(project)
