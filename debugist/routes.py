@@ -13,6 +13,11 @@ def home():
 # Projects function. Displays all current projects in alphabetical order.
 @app.route("/projects")
 def projects():
+
+    if "user" not in session:
+        flash("You need to be logged in to view projects")
+        return redirect(url_for("home"))
+
     projects = list(Project.query.order_by(Project.project_name).all())
     return render_template("projects.html", projects=projects)   
 
