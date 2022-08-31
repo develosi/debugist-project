@@ -71,6 +71,7 @@ def delete_project(project_id):
 # Add Task function.
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
+    
     if "user" not in session:
         flash("You need to be logged in to add a task")
         return redirect(url_for("home"))
