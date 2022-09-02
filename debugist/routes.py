@@ -58,8 +58,8 @@ def edit_project(project_id):
 @app.route("/delete_project/<int:project_id>")
 def delete_project(project_id):
 
-    if "user" not in session:
-        flash("You need to be logged in to delete projects")
+    if "user" not in session or session["user"] != "admin":
+        flash("You need to be admin in to delete projects")
         return redirect(url_for("home"))
 
     project = Project.query.get_or_404(project_id)
