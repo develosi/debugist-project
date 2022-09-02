@@ -19,6 +19,7 @@ class Task(db.Model):
     task_description = db.Column(db.Text, nullable=False)
     is_urgent = db.Column(db.Boolean, default=False, nullable=False)
     due_date = db.Column(db.Date, nullable=False)
+    created_by = db.Column(db.String(50), unique=True, nullable=False)
     project_id = db.Column(db.Integer, db.ForeignKey("project.id", ondelete="CASCADE"), nullable=False)
 
     def __repr__(self):
