@@ -114,7 +114,7 @@ def edit_task(task_id):
         flash("Task Successfully Edited")
         return redirect(url_for("home"))
 
-    # return render_template("edit_task.html", task=task, projects=projects)
+    return render_template("edit_task.html", task=task, projects=projects)
 
 
 # Delete Task function.
