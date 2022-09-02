@@ -83,7 +83,6 @@ def add_task():
             is_urgent=bool(True if request.form.get("is_urgent") else False),
             due_date=request.form.get("due_date"),
             project_id=request.form.get("project_id"),
-            created_by=["user"]
             )
         db.session.add(task)
         db.session.commit()
