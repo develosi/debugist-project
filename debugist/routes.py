@@ -71,7 +71,7 @@ def delete_project(project_id):
 # Add Task function.
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
-    
+
     if "user" not in session:
         flash("You need to be logged in to add a task")
         return redirect(url_for("home"))
@@ -82,8 +82,9 @@ def add_task():
             task_description=request.form.get("task_description"),
             is_urgent=bool(True if request.form.get("is_urgent") else False),
             due_date=request.form.get("due_date"),
-            project_id=request.form.get("project_id")
-        )
+            project_id=request.form.get("project_id"),
+            created_by=["user"]
+            )
         db.session.add(task)
         db.session.commit()
         flash("Task Successfully Added")
@@ -96,14 +97,21 @@ def add_task():
 # Edit Task function.
 @app.route("/edit_task/<int:task_id>", methods=["GET", "POST"])
 def edit_task(task_id):
+
     task = Task.query.get_or_404(task_id)
     projects = list(Project.query.order_by(Project.project_name).all())
+
+    if "user" not in session or session["user"] != task["created_by"]:
+        flash("You can only edit your own tasks")
+        return redirect(url_for("home"))
+
     if request.method == "POST":
         task.task_name = request.form.get("task_name")
         task.task_description = request.form.get("task_description")
         task.is_urgent = bool(True if request.form.get("is_urgent") else False)
         task.due_date = request.form.get("due_date")
         task.project_id = request.form.get("project_id")
+        task.created_by = session["user"]
         db.session.commit()
     return render_template("edit_task.html", task=task, projects=projects)
 
