@@ -111,7 +111,10 @@ def edit_task(task_id):
         task.due_date = request.form.get("due_date")
         task.project_id = request.form.get("project_id")
         db.session.commit()
-    return render_template("edit_task.html", task=task, projects=projects)
+        flash("Task Successfully Edited")
+        return redirect(url_for("home"))
+
+    # return render_template("edit_task.html", task=task, projects=projects)
 
 
 # Delete Task function.
