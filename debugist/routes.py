@@ -42,8 +42,8 @@ def add_project():
 @app.route("/edit_project/<int:project_id>", methods=["GET", "POST"])
 def edit_project(project_id):
 
-    if "user" not in session:
-        flash("You need to be logged in to edit projects")
+    if "user" not in session or session["user"] != "admin":
+        flash("You need to be admin in to edit projects")
         return redirect(url_for("home"))
 
     project = Project.query.get_or_404(project_id)
