@@ -117,6 +117,11 @@ def edit_task(task_id):
 # Delete Task function.
 @app.route("/delete_task/<int:task_id>")
 def delete_task(task_id):
+
+    if "user" not in session:
+        flash("You need to be logged in to delete tasks")
+        return redirect(url_for("home"))
+
     task = Task.query.get_or_404(task_id)
     db.session.delete(task)
     db.session.commit()
