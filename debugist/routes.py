@@ -26,8 +26,8 @@ def projects():
 @app.route("/add_project", methods=["GET", "POST"])
 def add_project():
 
-    if "user" not in session:
-        flash("You need to be logged in to add projects")
+    if "user" not in session or session["user"] != "admin":
+        flash("You need to be admin to add projects")
         return redirect(url_for("home"))
 
     if request.method == "POST":
