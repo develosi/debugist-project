@@ -100,8 +100,8 @@ def edit_task(task_id):
     task = Task.query.get_or_404(task_id)
     projects = list(Project.query.order_by(Project.project_name).all())
 
-    if "user" not in session or session["user"] != task["created_by"]:
-        flash("You can only edit your own tasks")
+    if "user" not in session:
+        flash("You need to be logged in to edit tasks")
         return redirect(url_for("home"))
 
     if request.method == "POST":
@@ -110,7 +110,6 @@ def edit_task(task_id):
         task.is_urgent = bool(True if request.form.get("is_urgent") else False)
         task.due_date = request.form.get("due_date")
         task.project_id = request.form.get("project_id")
-        task.created_by = session["user"]
         db.session.commit()
     return render_template("edit_task.html", task=task, projects=projects)
 
