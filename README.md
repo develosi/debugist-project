@@ -15,7 +15,9 @@ Having wanting to keep track of all the testing requirements for my own projects
 At present the app is set up as a proof of concept to allow an admin user to be able to log in to create and delete projects, while normal users can log in and create or delete tasks to be completed for those projects. 
 
 Admin log in details are: 
+
 Username: admin
+
 Password: 12345 
 
 Anyone can create a normal user account by registering a username and password, both of which need to be at least five characters long. 
