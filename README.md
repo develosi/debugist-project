@@ -69,3 +69,30 @@ In its current form the app is just a proof of concept with many features missin
 * I want the project manager to have admin access so new projects can be created or old ones deleted. 
 * I want to be able to assign tasks to specific users and receive notifications when tasks are overdue. 
 
+---
+
+## Design
+
+### Colour Scheme
+
+I wanted to keep the colour scheme to be simple yet fun as the main focus for the user will be on the current projects and tasks rather than the app itself. 
+
+The backgrounds are kept to white and greys to maintain a clean simple dashboard interface.
+
+I used pink and teal as accent colours to contrast well against the white and grey backgrounds and card sections. 
+
+The red was only used on the delete buttons so that these would stand out and ensure that the user only selected them when they were sure to use them. 
+
+I wanted to make sure that the contrast of the colours was very well defined throughout the app, I used the recommended colours built into the Materialize CSS framework to maintain constancy and ensure that the colour spectrum would also work for users with colour blindness.  
+
+![Colour Scheme](colourScheme.png) 
+
+### Typography
+
+Roboto 2.0 font was used throughout the app.
+
+This font works well for the app design as it is simple and easy to read. 
+
+League Spartan font was used for the logo design. 
+
+![Font Example](Font.jpeg)
