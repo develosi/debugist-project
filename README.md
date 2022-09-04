@@ -22,7 +22,9 @@ Password: 12345
 
 Anyone can create a normal user account by registering a username and password, both of which need to be at least five characters long. 
 
-In its current form the app is just a proof of concept with many features missing that I would like to add. I have detailed out these possible future features later on in this README file. Debugist was created as my third milestone project for the Code Institute Level 5 Diploma in Web Application Development.
+Some dummy content has already been created such as projects and outstanding tasks, this can be overwritten and edited and is just there for proof of concept.
+
+In its current form the app has many features missing that I would like to add. I have detailed out these possible future features later on in this README file. Debugist was created as my third milestone project for the Code Institute Level 5 Diploma in Web Application Development.
 
 ---
 
@@ -284,3 +286,137 @@ HTML, CSS, Javascript, Python
 
 ---
 
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using Heroku. To deploy to Heroku:
+
+1. To successfully deploy on Heroku we first need to create some files: a requirements.txt file and a Procfile.
+
+2. The requirements.txt file contains all the applications and dependencies that are required to run the app. To create the requirements.txt file run the following command in the terminal:
+
+    ```bash
+    pip3 freeze --local > requirements.txt
+    ```
+
+3. The Procfile tells Heroku which files run the app and how to run it. To create the Procfile run the following command in the terminal:
+
+    ```bash
+    echo web: python app.py > Procfile
+    ```
+
+    NOTE: The Procfile uses a capital P and doesn't have a file extension on the end.
+
+4. If the Procfile has been created correctly it will have the Heroku logo next to it. It is also important to check the Procfile contents, as sometimes on creation a blank line will be added at the end of the file. This can sometimes cause problems when deploying to Heroku, so if the file contains a blank line at the end, delete this and save the file. Make sure to save both these files and then add, commit and push them to GitHub.
+
+5. Login (or sign up) to [heroku.com](https://www.heroku.com).
+
+6. Click the new button and then click create new app.
+
+7. You will then be asked to give your app a name (these must be unique so you cannot reuse the same as someone else) and select a region, the region should be the one closest to you. Once these are completed click create app.
+
+8. You will now need to connect the Heroku app to the GitHub repository for the site. Select GitHub in the deployment section, find the correct repository for the project and then click connect.
+
+9. Once the repository is connected, you will need to provide Heroku some config variables it needs to build the app. Click on the settings tab and then click reveal config vars button. You will now need to add the environment key/value variables that were used in the env.py file:
+
+    | KEY | VALUE |
+    | :-- | :-- |
+    | IP | 0.0.0.0 |
+    | PORT | 5000 |
+    | SECRET_KEY| YOUR_SECRET_KEY* |
+    | DATABASE_URL | POSTGRES://* |
+    | DEBUG | TRUE** |
+
+    *Denotes a value that is specific to your app.
+
+    **This is set to true while deploying to enable us to see any bugs. Please change to FALSE after deployment.
+
+10. You're now ready to click the enable automatic deploys and create button. Heroku will start building the app.
+
+11. As this project utilises a relational database, there are a few more steps to set this up.
+
+12. On the heroku dashboard go to resources tab and then select add-ons. You will need to search for and select heroku postgres. For this project the hobby dev free tier is fine.
+
+13. Go back into settings and reveal config vars. You should now see a new key called DATABASE_URL and the value should have been pre-populated.
+
+14. We will now need to go the more button on the dashboard and select run console. This is where we will set up the tables in the database we have just created.
+
+15. Type python3 and then once the python interpretor opens, we can run the following:
+
+    ```bash
+    from debugist import db
+    db.create_all()
+    exit()
+    ```
+
+16. Now that the relational database has been set up and the tables created, we can now click open app and the Debugist application should now open in a new tab.
+
+### Local Development
+
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+
+2. Go to the repository for this project, [Debugist](https://github.com/develosi/debugist-project).
+
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+
+2. Go to the repository for this project, [Debugist](https://github.com/develosi/debugist-project).
+
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+
+5. Type the following command in the terminal (after the git clone you will need to paste the link you copied in step 3 above):
+
+    ```bash
+    git clone { & THE LINK FROM STEP 3 }
+    ```
+
+6. Install the packages from the requirements.txt file by running the following command in the Terminal:
+
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+
+--- 
+
+## Testing
+
+Please refer to [TESTING.md](TESTING.md) file for all testing completed.
+
+---
+
+## Credits
+
+### Code Used
+
+I used the code from the Code Institute modules on the Task Manager Posgresql project as a starting point for the main structure of the app. 
+
+### Content
+
+All content for the app, such as instructions and modal messages were written by myself.
+For proof of concept some dummy content has already been created such as projects and outstanding tasks, this was written by myself.
+
+### Media
+
+Logo was designed by myself using Canva design tools and is copyright free.
+
+### Acknowledgments
+
+I would like to acknowledge the following people:
+
+* My Code Institute Mentor and Class Teacher 
+
+* My fellow class-mates  - For sharing all their struggles and accomplishments along the way with tackling Milestone project 3.
+
+* The Code Institute Slack channel - Thanks to everyone that took the time to share their tips and advice.
