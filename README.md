@@ -96,3 +96,19 @@ This font works well for the app design as it is simple and easy to read.
 League Spartan font was used for the logo design. 
 
 ![Font Example](Font.jpeg)
+
+### Wireframes
+
+Wireframes were created using Balsamiq software for desktop, mobile and tablet.
+
+![Desktop Version Wireframes](wireframesMergedDesktop.jpeg)
+![Mobile Version Wireframes](wireframesMergedMobile.png)
+![Tablet Version Wireframes](wireframesMergedTablet.png)
+
+### Development Build Process
+
+The build process of the app was completed in small incremental sections. 
+This can be observed in the git commits catalogued within the Github repository that can be found here:
+[Repository Commits](https://github.com/develosi/debugist-project/commits/main)
+
+Testing was carried out during the build, all testing documentation can be found at: [TESTING.md](TESTING.md)
