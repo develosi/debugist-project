@@ -22,7 +22,7 @@ Password: 12345
 
 Anyone can create a normal user account by registering a username and password, both of which need to be at least five characters long. 
 
-In its current form the app is just a proof of concept with many features missing that I would like to add. I have detailed out these possible future features later on in this README file. 
+In its current form the app is just a proof of concept with many features missing that I would like to add. I have detailed out these possible future features later on in this README file. Debugist was created as my third milestone project for the Code Institute Level 5 Diploma in Web Application Development.
 
 ---
 
