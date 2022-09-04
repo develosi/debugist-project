@@ -226,6 +226,16 @@ I have been mindful to ensure that the app is as accessible as possible. The are
 * Ensuring that there is a strong colour contrast throughout the app so it easier to read.
 * Extensive A11y and colour blindness accessibility testing carried out, results of all testing can be found at: [TESTING.md](TESTING.md).
 
+### Defensive Programming
+
+I have used defensive programming throughout the app to ensure that users who are not logged in cannot create or delete any tasks. 
+This is achieved by checking whether the user is in a current session, then also checking to see if the session user is also the admin. 
+
+If a user is not the admin, then they are unable to create or delete projects, this is restricted to the admin user only. 
+Flash messages will be displayed to let users know if they are attempting to complete an action that they are not authorised to do.
+
+I have also created modals that appear to have users double confirm before a user can delete any sections.
+
 ---
 
 ## Technologies Used
