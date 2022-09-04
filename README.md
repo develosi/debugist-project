@@ -49,5 +49,23 @@ In its current form the app is just a proof of concept with many features missin
 
 ---
 
-## Contents 
+## User Experience 
+
+### User Stories 
+
+#### First time Visitor Goals 
+
+* I want to access and see the current list of outstanding debugging/testing tasks to be completed.
+* I want the app to be functional, easy to use and responsive on my device.
+* I want the app to be simple in its layout, easy to understand and navigate.
+
+#### Returning Visitor Goals
+
+* I want to be able to create, update and delete the current list of outstanding debugging/testing tasks to be completed.
+
+#### Frequent Visitor Goals
+
+* I want to be able to quickly see the current list of outstanding tasks and also what progress has been done on them.
+* I want the project manager to have admin access so new projects can be created or old ones deleted. 
+* I want to be able to assign tasks to specific users and receive notifications when tasks are overdue. 
 
