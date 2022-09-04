@@ -215,3 +215,62 @@ In future development and implementations I would like to add the following:
 * Ability to sort tasks by other options such as timeframe, urgency or alphabetically. 
 * Main home page should be a standard landing page without yet showing any tasks before a user is logged in.
 * Ability to create organisations so that you can only see projects or tasks associated with your organisation or team. 
+
+### Accessibility
+
+I have been mindful to ensure that the app is as accessible as possible. The areas I have focused on:
+
+* Using semantic HTML and aria labels as much as possible.
+* Using wording rather than an icon when an important action is required.
+* Choosing a simple easy to read font for the app with a bold style.
+* Ensuring that there is a strong colour contrast throughout the app so it easier to read.
+* Extensive A11y and colour blindness accessibility testing carried out, results of all testing can be found at: [TESTING.md](TESTING.md).
+
+---
+
+## Technologies Used
+
+### Languages Used
+
+HTML, CSS, Javascript, Python
+
+### Frameworks, Libraries & Programs Used
+
+* [PostgreSQL](https://www.postgresql.org/) - Relational database used to store the users and the bookshelves.
+
+* [Flask](https://pypi.org/project/Flask/) - A Python Web Framework.
+
+* [MaterializeCSS](https://materializecss.com/) - CSS Framework.
+
+* [SQLAlchemy](https://pypi.org/project/SQLAlchemy/) - Database library, used to interact with PostgreSQL.
+
+* [Pip](https://pypi.org/project/pip/) - Tool for installing python packages.
+
+* [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - Web template engine.
+
+* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+* [Github](https://github.com/) - For version control, save and store the files and deployment of site.
+
+* [Visual Studio Code](https://code.visualstudio.com/) - Integrated development environment.
+
+* [Font Awesome](https://fontawesome.com/) - For the icons on the app.
+
+* [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Testing features, checking responsiveness and styling.
+
+* [Tiny PNG](https://tinypng.com/) To compress images.
+
+* [Canva](https://www.canva.com/) To resize images and create the logo.
+
+* [Favicon.io](https://favicon.io/) To create the favicon.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/) - To show the website run on a range of devices.
+
+* [Techsini](https://techsini.com/multi-mockup/index.php) - Used to create mock up images of site on devices.
+
+* [Coolers](https://coolors.co/) - Colour scheme creation tool.
+
+* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - A Google chrome extension to help check for accessibility issues.
+
+---
+
