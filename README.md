@@ -105,6 +105,10 @@ Wireframes were created using Balsamiq software for desktop, mobile and tablet.
 ![Mobile Version Wireframes](wireframesMergedMobile.png)
 ![Tablet Version Wireframes](wireframesMergedTablet.png)
 
+### Database Schema 
+
+![Database Schema](schema.jpeg)
+
 ### Development Build Process
 
 The build process of the app was completed in small incremental sections. 
@@ -112,3 +116,41 @@ This can be observed in the git commits catalogued within the Github repository 
 [Repository Commits](https://github.com/develosi/debugist-project/commits/main)
 
 Testing was carried out during the build, all testing documentation can be found at: [TESTING.md](TESTING.md)
+
+### Features
+
+The Debugist app is made up of 10 pages and they all have content on them taken from the Base Template.
+
+* Home Page which is the same as Tasks Page
+* Register Page
+* Login Page 
+* Profile Page
+* Add Task Page
+* Edit Task Page
+* Projects Page
+* Add Project Page
+* Edit Project Page
+
+### App Pages 
+
+All Pages in the app are responsive and have a favicon of the Debugist Logo:
+
+![Debugist Favicon](documentation/images/faviconImage.png) 
+
+#### Base Template 
+
+All pages throughout the app have these base template elements on them. The content for these sections is taken from the Base Template HTML page. 
+
+![Top Nav Bar Section](documentation/images/.png)
+
+![Mobile Side Nav Bar Section](documentation/images/.png)
+
+![Footer Section](documentation/images/.png)
+
+#### The Home Page which is also the same as the Tasks Page
+
+The Tasks/Home page shows all current outstanding tasks to be completed. The user can edit or delete these tasks.  
+
+The user can add a new task by clicking on the Add Task button which is animated. 
+
+![Tasks/Home Page](documentation/images/desktopHome.png)
