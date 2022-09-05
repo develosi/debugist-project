@@ -26,3 +26,49 @@ I used the console in the developer tools to work through sections of code and e
 I have gone through each page using google chrome developer tools to ensure that each page is responsive on a variety of different screen sizes and devices.
 
 ---
+
+## AUTOMATED TESTING
+
+### W3C Validator
+
+[W3C](https://validator.w3.org/) was used to validate the HTML on all app pages. It was also used to validate the CSS file.
+
+* tasks.html - 
+* register.html -
+* login.html -
+* profile.html -
+* projects.html - 
+* add_project.html - 
+* edit_project.html -
+* add_task.html - 
+* edit_task.html -  
+
+---
+
+### JavaScript Validator
+
+[jshint](https://jshint.com/) was used to validate the JavaScript.
+I used the jshint extension I had installed into my Visual Studio Code IDE. 
+
+No warnings given for the script.js file.
+
+---
+
+### Lighthouse
+
+Google Lighthouse within the Chrome Developer Tools was used to test for performance, accessibility, best practices and SEO.
+
+### Desktop Results
+
+Results for the app based on desktop.
+
+![Debugist desktop results](documentation/images/.png)
+
+### Mobile Results
+
+Results for the app for mobile. 
+
+![Debugist mobile results](documentation/images/.png)
+
+---
+
