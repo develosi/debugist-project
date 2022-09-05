@@ -54,6 +54,13 @@ No warnings given for the script.js file.
 
 ---
 
+### Python Validator 
+
+
+
+
+---
+
 ### Lighthouse
 
 Google Lighthouse within the Chrome Developer Tools was used to test for performance, accessibility, best practices and SEO.
@@ -72,3 +79,40 @@ Results for the app for mobile.
 
 ---
 
+### WAVE Testing 
+
+
+
+
+
+---
+
+## MANUAL TESTING
+
+### Testing User Stories
+
+`First Time Visitor Goals`
+
+| Goals                                                              | How are thet achieved?
+|:-------------------------------------------------------------------:-----------------------------------------------------------------------------------------------------------------|
+| question. | answer. |
+| question.      | answer.                                                    |
+| question.             | answer.                                 |
+
+`Returning Visitor Goals`
+
+| Goals                                                              | How are thet achieved?
+|:-------------------------------------------------------------------:-----------------------------------------------------------------------------------------------------------------|
+| question. | answer. |
+| question.      | answer.                                                    |
+| question.             | answer.                                 |
+
+`Frequent Visitor Goals`
+
+| Goals                                                              | How are thet achieved?
+|:-------------------------------------------------------------------:-----------------------------------------------------------------------------------------------------------------|
+| question. | answer. |
+| question.      | answer.                                                    |
+| question.             | answer.                                 |
+
+---
