@@ -92,27 +92,164 @@ Results for the app for mobile.
 ### Testing User Stories
 
 `First Time Visitor Goals`
-
-| Goals                                                              | How are thet achieved?
-|:-------------------------------------------------------------------:-----------------------------------------------------------------------------------------------------------------|
-| question. | answer. |
-| question.      | answer.                                                    |
-| question.             | answer.                                 |
+| Goals | How are they achieved? |
+| --- | --- |
+|  |
+| Question | Answer.| 
+| Question | Answer.| 
+| Question | Answer.| 
+| Question | Answer.|
+#
 
 `Returning Visitor Goals`
-
-| Goals                                                              | How are thet achieved?
-|:-------------------------------------------------------------------:-----------------------------------------------------------------------------------------------------------------|
-| question. | answer. |
-| question.      | answer.                                                    |
-| question.             | answer.                                 |
+| Goals | How are they achieved? |
+| --- | --- |
+|  |
+| Question | Answer.| 
+| Question | Answer.| 
+| Question | Answer.| 
+| Question | Answer.|
+#
 
 `Frequent Visitor Goals`
-
-| Goals                                                              | How are thet achieved?
-|:-------------------------------------------------------------------:-----------------------------------------------------------------------------------------------------------------|
-| question. | answer. |
-| question.      | answer.                                                    |
-| question.             | answer.                                 |
+| Goals | How are they achieved? |
+| --- | --- |
+|  |
+| Question | Answer.| 
+| Question | Answer.| 
+| Question | Answer.| 
+| Question | Answer.|
+#
 
 ---
+
+### Full Testing
+
+Full testing was performed on the following devices:
+
+* Laptop:
+  * Macbook Pro 2020 13 inch screen
+  * Macbook Pro 2020 with external 27 inch monitor
+* Mobile Devices:
+  * iPhone 7 plus.
+  * iPhone 6.
+
+Each device tested the site using the following browsers:
+
+* Google Chrome
+* Safari
+* Firefox
+
+Additional testing was taken by friends and family on a variety of devices. 
+
+* On small mobile devices such as the iPhone 6 the main logo section on the top nav bar gets cut off slightly, the logo also looks oversized for the screen. 
+* It is not obvious to users that the home screen is also the page where to find current tasks. The home page should have been renamed to "Tasks" to make it more obvious.
+* The flashing button animation for the "Add Task" button is annoying for some users and maybe should be removed. 
+* It was not obvious to some users what the app was actually supposed to be used for and wanted at least an FAQ section. 
+#
+
+`Tasks Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Register Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Log In Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Profile Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Projects Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Edit Project Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Add Project Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Add Task Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Edit Task Page`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+`Base Template Sections`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+#
+
+---
+
+## BUGS
+
+### Solved Bugs
+| No | Bug | How I solved the issue |
+| --- | --- | --- |
+|  |  |
+| 1 | Issue.| I solved it by... |
+| 2 | Issue.| I solved it by... |
+| 3 | Issue.| I solved it by... |
+| 4 | Issue.| I solved it by... |
+| 5 | Issue.| I solved it by... |
+| 6 | Issue.| I solved it by... |
+#
+
+### Known Unresolved Bugs
+
+* Bug 1.
+
+
+* Bug 2.
+
+
+* Bug 3.
+#

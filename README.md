@@ -88,6 +88,7 @@ The red was only used on the delete buttons so that these would stand out and en
 I wanted to make sure that the contrast of the colours was very well defined throughout the app, I used the recommended colours built into the Materialize CSS framework to maintain constancy and ensure that the colour spectrum would also work for users with colour blindness.  
 
 ![Colour Scheme](colourScheme.png) 
+#
 
 ### Typography
 
@@ -98,6 +99,7 @@ This font works well for the app design as it is simple and easy to read.
 League Spartan font was used for the logo design. 
 
 ![Font Example](Font.jpeg)
+#
 
 ### Wireframes
 
@@ -106,10 +108,12 @@ Wireframes were created using Balsamiq software for desktop, mobile and tablet.
 ![Desktop Version Wireframes](wireframesMergedDesktop.jpeg)
 ![Mobile Version Wireframes](wireframesMergedMobile.png)
 ![Tablet Version Wireframes](wireframesMergedTablet.png)
+#
 
 ### Database Schema 
 
 ![Database Schema](schema.jpeg)
+#
 
 ### Development Build Process
 
@@ -118,6 +122,7 @@ This can be observed in the git commits catalogued within the Github repository 
 [Repository Commits](https://github.com/develosi/debugist-project/commits/main)
 
 Testing was carried out during the build, all testing documentation can be found at: [TESTING.md](TESTING.md)
+#
 
 ### Features
 
@@ -132,6 +137,7 @@ The Debugist app is made up of 10 pages and they all have content on them taken 
 * Projects Page
 * Add Project Page
 * Edit Project Page
+#
 
 ### App Pages 
 
@@ -217,6 +223,7 @@ In future development and implementations I would like to add the following:
 * Ability to sort tasks by other options such as timeframe, urgency or alphabetically. 
 * Main home page should be a standard landing page without yet showing any tasks before a user is logged in.
 * Ability to create organisations so that you can only see projects or tasks associated with your organisation or team. 
+#
 
 ### Accessibility
 
@@ -227,6 +234,7 @@ I have been mindful to ensure that the app is as accessible as possible. The are
 * Choosing a simple easy to read font for the app with a bold style.
 * Ensuring that there is a strong colour contrast throughout the app so it easier to read.
 * Extensive A11y and colour blindness accessibility testing carried out, results of all testing can be found at: [TESTING.md](TESTING.md).
+#
 
 ### Defensive Programming
 
@@ -351,6 +359,7 @@ The site is deployed using Heroku. To deploy to Heroku:
     ```
 
 16. Now that the relational database has been set up and the tables created, we can now click open app and the Debugist application should now open in a new tab.
+#
 
 ### Local Development
 
@@ -387,14 +396,12 @@ To clone the repository:
     ```bash
     pip3 install -r requirements.txt
     ```
-
---- 
+#
 
 ## Testing
 
 Please refer to [TESTING.md](TESTING.md) file for all testing completed.
-
----
+#
 
 ## Credits
 
@@ -420,3 +427,4 @@ I would like to acknowledge the following people:
 * My fellow class-mates  - For sharing all their struggles and accomplishments along the way with tackling Milestone project 3.
 
 * The Code Institute Slack channel - Thanks to everyone that took the time to share their tips and advice.
+#
