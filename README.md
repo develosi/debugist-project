@@ -1,4 +1,4 @@
-# Debugist Project
+# Debugist
 
 ![The Debugist App shown on a variety of screen sizes](.png)
 
