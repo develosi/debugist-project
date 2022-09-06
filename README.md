@@ -229,7 +229,7 @@ In future development and implementations I would like to add the following:
 
 I have been mindful to ensure that the app is as accessible as possible. The areas I have focused on:
 
-* Using semantic HTML and aria labels as much as possible.
+* Using semantic HTML and alt attributes as much as possible.
 * Using wording rather than an icon when an important action is required.
 * Choosing a simple easy to read font for the app with a bold style.
 * Ensuring that there is a strong colour contrast throughout the app so it easier to read.
