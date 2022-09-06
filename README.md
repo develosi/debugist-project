@@ -126,7 +126,7 @@ Testing was carried out during the build, all testing documentation can be found
 
 ### Features
 
-The Debugist app is made up of 10 pages and they all have content on them taken from the Base Template.
+The Debugist app is made up of 9 pages and they all have content on them taken from the Base Template.
 
 * Home Page which is the same as Tasks Page
 * Register Page
