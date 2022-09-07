@@ -155,6 +155,10 @@ All pages throughout the app have these base template elements on them. The cont
 
 ![Footer Section](documentation/images/.png)
 
+warning message.... delete 
+
+warning message.... not admin 
+
 #### The Home Page which is also the same as the Tasks Page
 
 The Tasks/Home page shows all current outstanding tasks to be completed. The user can edit or delete these tasks.  
