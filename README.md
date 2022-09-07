@@ -155,9 +155,13 @@ All pages throughout the app have these base template elements on them. The cont
 
 ![Footer Section](documentation/images/.png)
 
-warning message.... delete 
+#### Warning Messages
 
-warning message.... not admin 
+Warning flash messages and defensive programming warning modals are also used throughout the app. 
+
+![Pink Flash Warning Message](documentation/images/.png)
+
+![Defensive Programming Modal](documentation/images/.png)
 
 #### The Home Page which is also the same as the Tasks Page
 
