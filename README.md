@@ -1,6 +1,6 @@
 # Debugist
 
-![The Debugist App shown on a variety of screen sizes](.png)
+![The Debugist App shown on a variety of screen sizes](documentation/mockup_debugist.png)
 
 Visit the deployed site: [Debugist](https://debugist-project.herokuapp.com/) 
 
@@ -87,7 +87,7 @@ The red was only used on the delete buttons so that these would stand out and en
 
 I wanted to make sure that the contrast of the colours was very well defined throughout the app, I used the recommended colours built into the Materialize CSS framework to maintain constancy and ensure that the colour spectrum would also work for users with colour blindness.  
 
-![Colour Scheme](colourScheme.png) 
+![Colour Scheme](documentation/debugist_colours.png) 
 #
 
 ### Typography
@@ -96,23 +96,39 @@ Roboto 2.0 font was used throughout the app.
 
 This font works well for the app design as it is simple and easy to read. 
 
+![Roboto Font Example](documentation/roboto_font.png)
+
 League Spartan font was used for the logo design. 
 
-![Font Example](Font.jpeg)
+![League Spartan Font Example](documentation/league_spartan_font.png)
 #
 
 ### Wireframes
 
 Wireframes were created using Balsamiq software for desktop, mobile and tablet.
 
-![Desktop Version Wireframes](wireframesMergedDesktop.jpeg)
-![Mobile Version Wireframes](wireframesMergedMobile.png)
-![Tablet Version Wireframes](wireframesMergedTablet.png)
+![Register Page Wireframes](documentation/wireframe_register.png)
+
+![Log In Page Wireframes](documentation/wireframe_login.png)
+
+![Register Page Wireframes](documentation/wireframe_profile.png)
+
+![Projects Page Wireframes](documentation/wireframe_projects.png)
+
+![Add Project Page Wireframes](documentation/wireframe_add_project.png)
+
+![Edit Project Page Wireframes](documentation/wireframe_edit_project.png)
+
+![Tasks Page Wireframes](documentation/wireframe_tasks.png)
+
+![Add Task Page Wireframes](documentation/wireframe_add_task.png)
+
+![Edit Task Page Wireframes](documentation/wireframe_edit_task.png)
 #
 
 ### Database Schema 
 
-![Database Schema](schema.jpeg)
+![Database Schema](documentation/schema_debugist.png)
 #
 
 ### Development Build Process
@@ -143,81 +159,81 @@ The Debugist app is made up of 9 pages and they all have content on them taken f
 
 All Pages in the app are responsive and have a favicon of the Debugist Logo:
 
-![Debugist Favicon](documentation/images/faviconImage.png) 
+![Debugist Favicon](documentation/debugist_favicon.png) 
 
 #### Base Template 
 
 All pages throughout the app have these base template elements on them. The content for these sections is taken from the Base Template HTML page. 
 
-![Top Nav Bar Section](documentation/images/.png)
+![Top Nav Bar Section](documentation/topnav_not_logged_in_screenshot.png)
 
-![Mobile Side Nav Bar Section](documentation/images/.png)
+![Top Nav Bar Section When Logged In](documentation/topnav_logged_in_screenshot.png)
 
-![Footer Section](documentation/images/.png)
+![Footer Section](documentation/footer_screenshot.png)
 
 #### Warning Messages
 
 Warning flash messages and defensive programming warning modals are also used throughout the app. 
 
-![Pink Flash Warning Message](documentation/images/.png)
+![Pink Flash Warning Message](documentation/must_be_admin_screenshot.png)
 
-![Defensive Programming Modal](documentation/images/.png)
+![Defensive Programming Modal](documentation/delete_warning_screenshot.png)
 
-#### The Home Page which is also the same as the Tasks Page
+#### The Home Page (Also the same as the Tasks Page)
 
 The Tasks/Home page shows all current outstanding tasks to be completed. The user can edit or delete these tasks.  
 
 The user can add a new task by clicking on the Add Task button which is animated. 
 
-![Tasks/Home Page](documentation/images/.png)
+![Tasks/Home Page](documentation/tasks_screenshot.png)
 
 #### Register Page
 
 The user can register for an account. 
 
-![Register Page](documentation/images/.png)
+![Register Page](documentation/register_screenshot.png)
 
 #### Login Page 
 
 A user that already has an account can log in. 
 
-![Login Page](documentation/images/.png)
+![Login Page](documentation/login_screenshot.png)
 
 #### Profile Page
 
 The user can access the profile page, no content has been produced for the profile section yet. 
 
-![Profile Page](documentation/images/.png)
+![Profile Page](documentation/profile_screenshot.png)
 
 #### Add Task Page
 
 The user can add a new task by completing the form and clicking on the plus symbol. 
 
-![Add Task Page](documentation/images/.png)
+![Add Task Page](documentation/add_task_screenshot.png)
 
 #### Edit Task Page
 
 The user can edit the task by completing the form and clicking on the plus symbol. 
 
-![Edit Task Page](documentation/images/.png)
+![Edit Task Page](documentation/edit_task_screenshot.png)
 
 #### Projects Page
 
 The user can view all current projects. 
 
-![Projects Page](documentation/images/.png)
+![Projects Page](documentation/projects_screenshot.png)
 
 #### Add Project Page
 
 If the admin is logged in they can add a new project.
 
-![Add Project Page](documentation/images/.png)
+![Add Project Page](documentation/add_project_screenshot.png)
 
 #### Edit Project Page
 
 If the admin is logged in they can edit a projects name. 
 
-![Edit Project Page](documentation/images/.png)
+![Edit Project Page](documentation/edit_project_screenshot.png)
 
 #### Future Development
 
