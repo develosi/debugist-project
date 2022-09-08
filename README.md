@@ -85,7 +85,7 @@ I used pink and teal as accent colours to contrast well against the white and gr
 
 The red was only used on the delete buttons so that these would stand out and ensure that the user only selected them when they were sure to use them. 
 
-I wanted to make sure that the contrast of the colours was very well defined throughout the app, I used the recommended colours built into the Materialize CSS framework to maintain constancy and ensure that the colour spectrum would also work for users with colour blindness.  
+I wanted to make sure that the contrast of the colours was very well defined throughout the app, I used the recommended colours built into the Materialize CSS framework to maintain consistency and ensure that the colour spectrum would work for users with colour blindness.  
 
 ![Colour Scheme](documentation/debugist_colours.png) 
 #
@@ -163,7 +163,7 @@ All Pages in the app are responsive and have a favicon of the Debugist Logo:
 
 #### Base Template 
 
-All pages throughout the app have these base template elements on them. The content for these sections is taken from the Base Template HTML page. 
+All pages throughout the app have these base template sections on them. The content for these sections is taken from the Base Template HTML page. 
 
 ![Top Nav Bar Section](documentation/topnav_not_logged_in_screenshot.png)
 
@@ -246,7 +246,7 @@ In future development and implementations I would like to add the following:
 * Add a more secure log in section that includes email of the user. 
 * Ability to sort tasks by other options such as timeframe, urgency or alphabetically. 
 * Main home page should be a standard landing page without yet showing any tasks before a user is logged in.
-* Ability to create organisations so that you can only see projects or tasks associated with your organisation or team. 
+* Ability to create organisations so that you can only see projects or tasks associated within your organisation or team. 
 #
 
 ### Accessibility
@@ -280,7 +280,7 @@ HTML, CSS, Javascript, Python
 
 ### Frameworks, Libraries & Programs Used
 
-* [PostgreSQL](https://www.postgresql.org/) - Relational database used to store the users and the bookshelves.
+* [PostgreSQL](https://www.postgresql.org/) - Relational database used.
 
 * [Flask](https://pypi.org/project/Flask/) - A Python Web Framework.
 
