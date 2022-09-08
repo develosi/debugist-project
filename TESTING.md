@@ -33,15 +33,21 @@ I have gone through each page using google chrome developer tools to ensure that
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all app pages. It was also used to validate the CSS file.
 
-* tasks.html - 
-* register.html -
-* login.html -
-* profile.html -
-* projects.html - 
-* add_project.html - 
-* edit_project.html -
-* add_task.html - 
-* edit_task.html -  
+* tasks.html 
+* register.html 
+* login.html 
+* profile.html 
+* projects.html  
+* add_project.html  
+* edit_project.html 
+* add_task.html  
+* edit_task.html   
+
+  * HTML:
+  Get one warning for the 'flash banner' section, recommends to use a heading or change to a div from a 'section'.
+
+  * CSS: 
+  Warnings given for CDN linked libraries from FontAwesome and MaterializeCSS. These warnings did not affect linked elements I was using from those libraries. 
 
 ---
 
