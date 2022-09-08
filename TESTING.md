@@ -1,6 +1,6 @@
 # Debugist -  Testing
 
-![The Debugist App shown on a variety of screen sizes](documentation/images/mockupLayout.png)
+![The Debugist App shown on a variety of screen sizes](documentation/mockup_debugist.png)
 
 Visit the deployed site: [Debugist](https://debugist-project.herokuapp.com/)
 
