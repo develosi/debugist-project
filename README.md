@@ -364,7 +364,7 @@ The site is deployed using Heroku. To deploy to Heroku:
 
     **This is set to true while deploying to enable us to see any bugs. Please change to FALSE after deployment.
 
-10. You're now ready to click the enable automatic deploys and create button. Heroku will start building the app.
+10. You're now ready to click the 'enable automatic deploys' and create button. Heroku will start building the app.
 
 11. As this project utilises a relational database, there are a few more steps to set this up.
 
