@@ -74,15 +74,17 @@ I need to spend more time on this and confirm solutions around the errors showin
 
 Google Lighthouse within the Chrome Developer Tools was used to test for performance, accessibility, best practices and SEO.
 
+Most performance issues related to the MaterializeCSS library, I would like to spend more time on this to figure out how it can be improved upon. 
+
 ### Desktop Results
 
-Results for the app based on desktop.
+Results for desktop.
 
 ![Debugist desktop results](documentation/images/.png)
 
 ### Mobile Results
 
-Results for the app for mobile. 
+Results for mobile. 
 
 ![Debugist mobile results](documentation/images/.png)
 
