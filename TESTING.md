@@ -53,7 +53,7 @@ I have gone through each page using google chrome developer tools to ensure that
 
 ### JavaScript Validator
 
-[jshint](https://jshint.com/) was used to validate the JavaScript.
+[JSHint](https://jshint.com/) was used to validate the JavaScript.
 I used the jshint extension I had installed into my Visual Studio Code IDE. 
 
 No warnings given for the script.js file.
@@ -110,9 +110,9 @@ The error was showing up for a link with no text associated with it despite they
 | Goals | How are they achieved? |
 | --- | --- |
 |  |
-| Question | Answer.| 
-| Question | Answer.| 
-| Question | Answer.| 
+| I want to access and see the current list of outstanding debugging/testing tasks to be completed. | Answer.| 
+| I want the app to be functional, easy to use and responsive on my device. | Answer.| 
+| I want the app to be simple in its layout, easy to understand and navigate. | Answer.| 
 | Question | Answer.|
 #
 
@@ -120,7 +120,7 @@ The error was showing up for a link with no text associated with it despite they
 | Goals | How are they achieved? |
 | --- | --- |
 |  |
-| Question | Answer.| 
+| I want to be able to create, update and delete the current list of outstanding debugging/testing tasks to be completed. | Answer.| 
 | Question | Answer.| 
 | Question | Answer.| 
 | Question | Answer.|
@@ -130,9 +130,9 @@ The error was showing up for a link with no text associated with it despite they
 | Goals | How are they achieved? |
 | --- | --- |
 |  |
-| Question | Answer.| 
-| Question | Answer.| 
-| Question | Answer.| 
+| I want to be able to quickly see the current list of outstanding tasks and also what progress has been done on them. | Answer.| 
+| I want the project manager to have admin access so new projects can be created or old ones deleted. | Answer.| 
+| I want to be able to assign tasks to specific users and receive notifications when tasks are overdue. | Answer.| 
 | Question | Answer.|
 #
 
