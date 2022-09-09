@@ -150,7 +150,7 @@ Each device tested the site using the following browsers:
 * Safari
 * Firefox
 
-Additional testing was taken by friends and family on a variety of devices. 
+Additional testing was done by friends and family on a variety of devices. 
 
 * On small mobile devices such as the iPhone 6 the main logo section on the top nav bar gets cut off slightly, the logo also looks oversized for the screen. 
 * It is not obvious to users that the home screen is also the page where to find current tasks. The home page should have been renamed to "Tasks" to make it more obvious.
