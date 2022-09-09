@@ -62,8 +62,11 @@ No warnings given for the script.js file.
 
 ### Python Validator 
 
+[PEP8 Online](http://pep8online.com/) was used to validate all Python files.
 
+Due to limited time for completing the project, unfortunately I was unable to finish fixing all PEP8 errors that were shown. 
 
+I need to spend more time on this and confirm solutions around the errors showing for backslashes within brackets, also how to be best line break code over multiple lines. 
 
 ---
 
