@@ -162,8 +162,10 @@ Additional testing was done by friends and family on a variety of devices.
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Add Task Button | When clicked the user will be redirected to the add task page.| Clicked button | Redirected to the add task page. | Pass |
+| Drop Down Menu Button | When clicked the user will be shown details of the task and buttons to edit or delete.| Clicked button | Task details are displayed along with edit and delete buttons. | Pass |
+| Task Edit Button | When clicked the user will be redirected to the edit task page.| Clicked button | Redirected to the edit task page. | Pass |
+| Task Delete Button | When clicked the user will see a modal confirming if they want to delete.| Clicked button | Modal is displayed asking to confirm if user wants to Delete or Cancel. | Pass |
 #
 
 `Register Page`
