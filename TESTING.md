@@ -92,9 +92,13 @@ Results for mobile.
 
 ### WAVE Testing 
 
+[WAVE](http://wave.webaim.org/) (Web Accessibility Evaluation Tool) This tool allows developers to create websites that are more accessible to users with disabilities.
 
+I have used the WAVE testing tool to try and ensure there are no accessibility issues with the site.
 
+The report came back with 1 error and 2 warnings. 
 
+The error was showing up for a link with no text associated with it despite they're being an 'alt' tag with text description. With more time I would investigate further. 
 
 ---
 
