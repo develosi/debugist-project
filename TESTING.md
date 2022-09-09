@@ -110,30 +110,25 @@ The error was showing up for a link with no text associated with it despite they
 | Goals | How are they achieved? |
 | --- | --- |
 |  |
-| I want to access and see the current list of outstanding debugging/testing tasks to be completed. | Answer.| 
-| I want the app to be functional, easy to use and responsive on my device. | Answer.| 
-| I want the app to be simple in its layout, easy to understand and navigate. | Answer.| 
-| Question | Answer.|
+| I want to access and see the current list of outstanding debugging/testing tasks to be completed. | The tasks page is the first one that is displayed when opening the app, allowing the user quick access to the current task list.| 
+| I want the app to be functional, easy to use and responsive on my device. | MaterializeCSS was used to ensure responsiveness across multiple devices and design components used to maintain consistency.| 
+| I want the app to be simple in its layout, easy to understand and navigate. | A simple yet bold design was used throughout the app to ensure ease of use. Using high contrasting colours and an intuitive layout.|
 #
 
 `Returning Visitor Goals`
 | Goals | How are they achieved? |
 | --- | --- |
 |  |
-| I want to be able to create, update and delete the current list of outstanding debugging/testing tasks to be completed. | Answer.| 
-| Question | Answer.| 
-| Question | Answer.| 
-| Question | Answer.|
+| I want to be able to create, update and delete the current list of outstanding debugging/testing tasks to be completed. | Using MaterializeCSS components a simple layout was created that allows users to create, read, update and delete all tasks. Admin users are also able to have full CRUD functionality with Projects as well as Tasks.|
 #
 
 `Frequent Visitor Goals`
 | Goals | How are they achieved? |
 | --- | --- |
 |  |
-| I want to be able to quickly see the current list of outstanding tasks and also what progress has been done on them. | Answer.| 
-| I want the project manager to have admin access so new projects can be created or old ones deleted. | Answer.| 
-| I want to be able to assign tasks to specific users and receive notifications when tasks are overdue. | Answer.| 
-| Question | Answer.|
+| I want to be able to quickly see the current list of outstanding tasks and also what progress has been done on them. | The tasks section is the first section you see when opening the app. I failed to create the functionality to be able to have a task broken down into sections. This can be added in the future.| 
+| I want the project manager to have admin access so new projects can be created or old ones deleted. | An admin role was created that has full access to add or delete projects. Normal users can then add tasks associated with that project.| 
+| I want to be able to assign tasks to specific users and receive notifications when tasks are overdue. | Given the time frame I had I did not manage to add in this functionality. This can be added in the future. The notifications feature maybe unnecessary.|
 #
 
 ---
