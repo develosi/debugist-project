@@ -80,13 +80,13 @@ Most performance issues related to the MaterializeCSS library, I would like to s
 
 Results for desktop.
 
-![Debugist desktop results](documentation/images/.png)
+![Debugist desktop results](documentation/lighthouse_desktop.png)
 
 ### Mobile Results
 
 Results for mobile. 
 
-![Debugist mobile results](documentation/images/.png)
+![Debugist mobile results](documentation/lighthouse_mobile.png)
 
 ---
 
