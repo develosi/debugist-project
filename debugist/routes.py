@@ -19,10 +19,10 @@ def projects():
         return redirect(url_for("home"))
 
     projects = list(Project.query.order_by(Project.project_name).all())
-    return render_template("projects.html", projects=projects)   
+    return render_template("projects.html", projects=projects)
 
 
-# Add Project function. 
+# Add Project function.
 @app.route("/add_project", methods=["GET", "POST"])
 def add_project():
 
@@ -35,7 +35,7 @@ def add_project():
         db.session.add(project)
         db.session.commit()
         return redirect(url_for("projects"))
-    return render_template("add_project.html")    
+    return render_template("add_project.html")
 
 
 # Edit Project function.
@@ -65,7 +65,7 @@ def delete_project(project_id):
     project = Project.query.get_or_404(project_id)
     db.session.delete(project)
     db.session.commit()
-    return redirect(url_for("projects"))        
+    return redirect(url_for("projects"))
 
 
 # Add Task function.
@@ -89,7 +89,7 @@ def add_task():
         flash("Task Successfully Added")
         return redirect(url_for("home"))
 
-    projects = list(Project.query.order_by(Project.project_name).all())    
+    projects = list(Project.query.order_by(Project.project_name).all())
     return render_template("add_task.html", projects=projects)
 
 
@@ -128,7 +128,7 @@ def delete_task(task_id):
     task = Task.query.get_or_404(task_id)
     db.session.delete(task)
     db.session.commit()
-    return redirect(url_for("home"))    
+    return redirect(url_for("home"))
 
 
 # Adding a user and managing user
@@ -137,17 +137,17 @@ def register():
     if request.method == "POST":
         # Check if username already exists in db
         existing_user = Users.query.filter(Users.user_name == \
-                                           request.form.get("username").lower()).all()
-        
+                                request.form.get("username").lower()).all()
+
         if existing_user:
             flash("Username already exists")
             return redirect(url_for("register"))
-        
+
         user = Users(
             user_name=request.form.get("username").lower(),
             password=generate_password_hash(request.form.get("password"))
         )
-        
+
         db.session.add(user)
         db.session.commit()
 
@@ -164,7 +164,7 @@ def login():
     if request.method == "POST":
         # Check if username exists in db
         existing_user = Users.query.filter(Users.user_name == \
-                                           request.form.get("username").lower()).all()
+                            request.form.get("username").lower()).all()
 
         if existing_user:
             print(request.form.get("username"))
@@ -191,7 +191,7 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-        
+
     if "user" in session:
         return render_template("profile.html", username=session["user"])
 
@@ -203,4 +203,4 @@ def logout():
     # Remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
-    return redirect(url_for("login"))    
+    return redirect(url_for("login"))
