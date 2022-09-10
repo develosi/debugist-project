@@ -162,81 +162,86 @@ Additional testing was done by friends and family on a variety of devices.
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Add Task Button | When clicked the user will be redirected to the add task page.| Clicked button | Redirected to the add task page. | Pass |
-| Drop Down Menu Button | When clicked the user will be shown details of the task and buttons to edit or delete.| Clicked button | Task details are displayed along with edit and delete buttons. | Pass |
-| Task Edit Button | When clicked the user will be redirected to the edit task page.| Clicked button | Redirected to the edit task page. | Pass |
-| Task Delete Button | When clicked the user will see a modal confirming if they want to delete.| Clicked button | Modal is displayed asking to confirm if user wants to Delete or Cancel. | Pass |
+| Add Task Button | When clicked the user will be redirected to the add task page.| Clicked button. | Redirected to the add task page. | Pass |
+| Drop Down Menu Button | When clicked the user will be shown details of the task and buttons to edit or delete.| Clicked button. | Task details are displayed along with edit and delete buttons. | Pass |
+| Task Edit Button | When clicked the user will be redirected to the edit task page.| Clicked button. | Redirected to the edit task page. | Pass |
+| Task Delete Button | When clicked the user will see a modal confirming if they want to delete.| Clicked button. | Modal is displayed asking to confirm if user wants to Delete or Cancel. | Pass |
 #
 
 `Register Page`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Username Input | New user is able to input a new username that is at least five characters long.| Input a new username. | Username input with green underline confirming ok to use. | Pass |
+| Password Input | New user is able to input a new password that is at least five characters long.| Input a new password. | Password input with green underline confirming ok to use. | Pass |
+| Register Button | When clicked the user account will be created and the user taken to the profile page.| Clicked button. | Redirected to profile page showing new username. | Pass |
 #
 
 `Log In Page`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Username Input | User is able to input username.| Input username. | Username input with green underline confirming ok. | Pass |
+| Password Input | User is able to input password.| Input password. | Password input with green underline confirming ok. | Pass |
+| Log In Button | When clicked the user will be taken to the profile page.| Clicked button. | Redirected to profile page showing username. | Pass |
 #
 
 `Profile Page`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Username Displayed | When on profile page the username is displayed.| Click on profile page. | Username is displayed at top of profile page along with the word 'profile'. | Pass |
 #
 
 `Projects Page`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Add Project 'Plus' Button | When clicked the user will be redirected to the add project page.| Clicked button. | Redirected to the add project page. | Pass |
+| Project Edit Button | When clicked the user will be redirected to the edit project page.| Clicked button. | Redirected to the edit project page. | Pass |
+| Project Delete Button | When clicked the user will see a modal confirming if they want to delete.| Clicked button. | Modal is displayed asking to confirm if user wants to Delete or Cancel. | Pass |
 #
 
 `Edit Project Page`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| New Project Name Input | User is able to input a new project name.| Input a new project name. | New project name input with green underline confirming ok. | Pass |
+| Edit Project Button | When clicked the user will be redirected to the projects page showing new project name.| Clicked button. | Redirected to the projects page seeing new project name. | Pass |
 #
 
 `Add Project Page`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| New Project Name Input | User is able to input a new project name.| Input a new project name. | New project name input with green underline confirming ok. | Pass |
+| Add Project 'Plus' Button | When clicked the user will be redirected to the projects page showing new project.| Clicked button. | Redirected to the projects page seeing new project. | Pass |
 #
 
 `Add Task Page`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Add Data to Add Task Card | User is able to input data in sections in card.| Input all data in input fields to create a task. | All input fields completed and populated. | Pass |
+| Add Task 'Plus' Button | When clicked the user will be redirected to the tasks page showing new task.| Clicked button. | Redirected to the tasks page seeing new task. | Pass |
 #
 
 `Edit Task Page`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Update Data to Edit Task Card | User is able to update data in sections in card.| Input all data in input fields to edit task. | All input fields completed and populated except the project menu does not automatically show current project and needs to be selected manually. | Fail |
+| Edit Task Button | When clicked the user will be redirected to the tasks page showing updated task.| Clicked button. | Redirected to the tasks page seeing updated task. | Pass |
 #
 
 `Base Template Sections`
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
+| Debugist Logo Link | When clicked the user will be redirected to the tasks/home page.| Clicked link. | Redirected to the tasks/home page. | Pass |
+| Nav Bar Links | When clicked the user will be redirected to the related page.| Clicked links. | Redirected to the correct related page. | Pass |
+| Footer Page Logo Link | When clicked the user will be redirected to the tasks/home page.| Clicked link. | Redirected to the tasks/home page. | Pass |
+| Footer Page Social Links | When clicked a new tab will be opened in the browser for the related social media website.| Clicked links. | New tab opens for social media website in browser. | Pass |
 #
 
 ---
