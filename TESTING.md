@@ -265,7 +265,7 @@ Additional testing was done by friends and family on a variety of devices.
 * Drop down menu for editing tasks does not automatically show current project.
 
 
-* Bug 2.
+* One previosu build on Heroku is stuck in 'build in progress'. Current build unaffected. Reached out to Heroku with no response to resolve. 
 
 
 * Bug 3.
