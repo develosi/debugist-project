@@ -253,10 +253,10 @@ Additional testing was done by friends and family on a variety of devices.
 | --- | --- | --- |
 |  |  |
 | 1 | IP address for local testing was not working.| Changed to 5001 from 5000 to resolve and worked. |
-| 2 | Unable to change names of projects as admin user.| I solved it by fixing the code in line 8 edit_project.html to correct format. |
-| 3 | Project names not showing up in collapsable menu of current tasks.| I solved it by fixing the link of task.project to task.Project with a capital P. |
-| 4 | Unable to deploy to heroku, issue with requirements file.| I solved it by removing requirement ‘six’. This is not needed for Heroku |
-| 5 | Modal not opening automattically when deleting an item.| I updated the js file to the correct function. The updated function did not conflict with other script sections such as the collapsables function. |
+| 2 | Unable to change names of projects as admin user.| I solved it by fixing the code in line 8 in edit_project.html to correct format. |
+| 3 | Project names not showing up in collapsable menu of current tasks.| I fixed the link of task.project to task.Project with a capital P. |
+| 4 | Unable to deploy to Heroku, issue with requirements file.| I solved it by removing requirement ‘six’. This is not needed for Heroku |
+| 5 | Modal not opening automatically when deleting an item.| I updated the js file to the correct function. The updated function did not conflict with other script sections such as the collapsables function. |
 | 6 | Collapsables stopped working.| I solved this by fixing the code in eventListener to the correct format. |
 #
 
@@ -265,6 +265,6 @@ Additional testing was done by friends and family on a variety of devices.
 * Drop down menu in the card for editing tasks does not automatically show the current project you are in. You need to manually select the current project from the drop down list. With more time I would like to resolve this. 
 
 
-* One previouse build on Heroku is stuck in 'build in progress' mode. Current build is unaffected though. This may cause issues in the future though so I am trying to get the build progress of that deployment stopped. I have Reached out to Heroku with no response to resolve. 
+* One previous build on Heroku is stuck in 'build in progress' mode. Current build is unaffected though. This may cause issues in the future though so I am trying to get the build progress of that deployment stopped. I have reached out to Heroku with no response to resolve. 
 
 #
