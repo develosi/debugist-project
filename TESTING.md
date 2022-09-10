@@ -262,7 +262,7 @@ Additional testing was done by friends and family on a variety of devices.
 
 ### Known Unresolved Bugs
 
-* Bug 1.
+* Drop down menu for editing tasks does not automatically show current project.
 
 
 * Bug 2.
