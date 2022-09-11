@@ -6,13 +6,13 @@ Visit the deployed site: [Debugist](https://debugist-project.herokuapp.com/)
 
 The Debugist App is a simple task manager tool specifically designed for the management of debugging and testing your apps and websites. 
 
-It can be hard to keep track of what testing needs to be done for each project build and also what specific tests need to be carried per code base or package used. 
+It can be hard to keep track of what testing needs to be done for each project build, also what specific tests need to be carried out per code base or package. 
 
-With Debugist each project can be set up by an “admin” user and then multiple members of a team can log in and add or delete certain debugging and testing tasks when required. 
+With Debugist each project can be set up by an “admin” user, then multiple members of a team can log in and add or delete certain debugging and testing tasks when required. 
 
 Having wanting to keep track of all the testing requirements for my own projects, I thought creating a debugging and testing task manager tool would be beneficial for myself and for others. 
 
-At present the app is set up as a proof of concept to allow an admin user to be able to log in to create and delete projects, while normal users can log in and create or delete tasks to be completed for those projects. 
+At present the app is set up as a proof of concept to allow an admin user to be able to log in to create and delete projects. While normal users can log in and create or delete tasks to be completed for those projects. 
 
 Admin log in details are: 
 
@@ -24,7 +24,7 @@ Anyone can create a normal user account by registering a username and password, 
 
 Some dummy content has already been created such as projects and outstanding tasks, this can be overwritten and edited and is just there for proof of concept.
 
-In its current form the app has many features missing that I would like to add. I have detailed out these possible future features later on in this README file. Debugist was created as my third milestone project for the Code Institute Level 5 Diploma in Web Application Development.
+In its current form the app has many features missing that I would like to add. I have detailed out these possible features later on in this README file. Debugist was created as my third milestone project for the Code Institute Level 5 Diploma in Web Application Development.
 
 ---
 
@@ -85,7 +85,7 @@ I used pink and teal as accent colours to contrast well against the white and gr
 
 The red was only used on the delete buttons so that these would stand out and ensure that the user only selected them when they were sure to use them. 
 
-I wanted to make sure that the contrast of the colours was very well defined throughout the app, I used the recommended colours built into the Materialize CSS framework to maintain consistency and ensure that the colour spectrum would work for users with colour blindness.  
+I wanted to make sure that the contrast of the colours was very well defined throughout the app, I used the recommended colours built into the Materialize CSS framework, maintaining consistency and ensuring that the colour spectrum would work for users with colour blindness.  
 
 ![Colour Scheme](documentation/debugist_colours.png) 
 #
@@ -268,7 +268,7 @@ This is achieved by checking whether the user is in a current session, then also
 If a user is not the admin, then they are unable to create or delete projects, this is restricted to the admin user only. 
 Flash messages will be displayed to let users know if they are attempting to complete an action that they are not authorised to do.
 
-I have also created modals that appear to have users double confirm before a user can delete any sections.
+I have also created modals that appear to have users double confirm before a user can delete any projects/tasks.
 
 ---
 
