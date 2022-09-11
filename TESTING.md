@@ -66,7 +66,7 @@ No warnings given for the script.js file.
 
 Due to limited time for completing the project, unfortunately I was unable to finish fixing all PEP8 errors that were shown. 
 
-I need to spend more time on this and confirm solutions around the errors showing for backslashes within brackets, also how to be best line break code over multiple lines. 
+I need to spend more time on this and confirm solutions around the errors showing for backslashes within brackets. Also need to confirm the best way to have code break over multiple lines. 
 
 ---
 
@@ -119,7 +119,7 @@ The error was showing up for a link with no text associated with it despite they
 | Goals | How are they achieved? |
 | --- | --- |
 |  |
-| I want to be able to create, update and delete the current list of outstanding debugging/testing tasks to be completed. | Using MaterializeCSS components a simple layout was created that allows users to create, read, update and delete all tasks. Admin users are also able to have full CRUD functionality with Projects as well as Tasks.|
+| I want to be able to create, update and delete the current list of outstanding debugging/testing tasks to be completed. | Using MaterializeCSS components a simple layout was created that allows users to create, read, update and delete all tasks. Admin users are also able to have full CRUD functionality with projects as well as tasks.|
 #
 
 `Frequent Visitor Goals`
@@ -230,7 +230,7 @@ Additional testing was done by friends and family on a variety of devices.
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| Update Data to Edit Task Card | User is able to update data in sections in card.| Input all data in input fields to edit task. | All input fields completed and populated except the project menu does not automatically show current project and needs to be selected manually. | Fail |
+| Update Data to Edit Task Card | User is able to update data in sections in card.| Input all data in input fields to edit task. | All input fields completed and populated, except the project menu does not automatically show current project and needs to be selected manually. | Fail |
 | Edit Task Button | When clicked the user will be redirected to the tasks page showing updated task.| Clicked button. | Redirected to the tasks page seeing updated task. | Pass |
 #
 
@@ -257,7 +257,7 @@ Additional testing was done by friends and family on a variety of devices.
 | 3 | Project names not showing up in collapsable menu of current tasks.| I fixed the link of task.project to task.Project with a capital P. |
 | 4 | Unable to deploy to Heroku, issue with requirements file.| I solved it by removing requirement ‘six’. This is not needed for Heroku |
 | 5 | Modal not opening automatically when deleting an item.| I updated the js file to the correct function. The updated function did not conflict with other script sections such as the collapsables function. |
-| 6 | Collapsables stopped working.| I solved this by fixing the code in eventListener to the correct format. |
+| 6 | Collapsables not working.| I solved this by fixing the code in eventListener to the correct format. |
 #
 
 ### Known Unresolved Bugs
@@ -265,6 +265,6 @@ Additional testing was done by friends and family on a variety of devices.
 * Drop down menu in the card for editing tasks does not automatically show the current project you are in. You need to manually select the current project from the drop down list. With more time I would like to resolve this. 
 
 
-* One previous build on Heroku is stuck in 'build in progress' mode. Current build is unaffected though. This may cause issues in the future though so I am trying to get the build progress of that deployment stopped. I have reached out to Heroku with no response to resolve. 
+* One previous build on Heroku is stuck in 'build in progress' mode. Current build is unaffected though. This may cause issues in the future so I am trying to get the build progress of that deployment stopped. I have reached out to Heroku with no response to resolve. 
 
 #
